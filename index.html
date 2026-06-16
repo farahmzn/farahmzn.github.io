@@ -222,10 +222,16 @@
       text-decoration: none; color: var(--cream);
       display: flex; flex-direction: column; gap: 4px;
       transition: background 0.2s;
+      min-width: 0;
     }
     .contact-item:hover { background: rgba(255,255,255,0.15); }
     .contact-item-label { font-size: 0.66rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.6; }
-    .contact-item-val { font-size: 0.85rem; font-weight: 500; }
+    .contact-item-val {
+      font-size: 0.82rem; font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
 
     footer {
       text-align: center; padding: 28px 5vw;
@@ -263,7 +269,7 @@
   <div class="hero-links">
     <a href="#projects" class="btn btn-primary">View Projects</a>
     <a href="mailto:farahmazlan88@gmail.com" class="btn btn-outline">Get in Touch</a>
-    <a href="https://drive.google.com/file/d/1jKijgdi28kvCWmjbXqSHhhnglz8jSsut/view?usp=sharing" target="_blank" class="btn btn-outline">📄 Resume</a>
+    <a href="https://drive.google.com/uc?export=download&id=1jKijgdi28kvCWmjbXqSHhhnglz8jSsut" class="btn btn-outline">📄 Resume</a>
   </div>
 </div>
 
@@ -348,7 +354,7 @@
           <p class="project-desc">Analyzed student digital usage data to identify patterns affecting learning outcomes. Created interactive Tableau dashboards to visualize behavioral trends, correlations, and performance insights.</p>
           <div class="project-footer">
             <div class="tag-row"><span class="tag">Tableau</span><span class="tag">Information Visualization</span><span class="tag">Academic Analytics</span></div>
-            <a href="https://drive.google.com/file/d/1gPmfurDIdeejB-iD59WQwHMRSeBMuiO-/view?usp=drive_link" target="_blank" class="view-link">View Project →</a>
+            <a href="https://drive.google.com/file/d/1gPmfurDIdeejB-iG59WQwHMRSeBMuiO-/view?usp=drive_link" target="_blank" class="view-link">View Project →</a>
           </div>
         </div>
       </div>
@@ -405,11 +411,12 @@
     <div class="section-eyebrow">Recognition</div>
     <div class="section-title">Achievements & Leadership</div>
     <div class="ach-list">
+      <div class="ach-item"><div class="ach-icon">📜</div><div><div class="ach-title">CompTIA Data+ Certified</div><div class="ach-sub">Industry-recognized data analytics certification</div></div></div>
+      <div class="ach-item"><div class="ach-icon">🏆</div><div><div class="ach-title">Best Commercialization Project – 3rd Place</div><div class="ach-sub">Presented HydriX at Innovatex: Innovative Tech Expo Semester 2, 2025/2026, demonstrating innovation, business viability, and real-world application of IoT technology</div></div></div>
       <div class="ach-item"><div class="ach-icon">🥈</div><div><div class="ach-title">Silver Award — Open International Innovation Challenge (OpIIC 2024)</div><div class="ach-sub">Recognized for innovative project performance at international level</div></div></div>
       <div class="ach-item"><div class="ach-icon">🎤</div><div><div class="ach-title">Conference Presenter — SITWE 2024, Multimedia University (MMU)</div><div class="ach-sub">Presented research at the 1st International Symposium on Information Technology and Web Engineering</div></div></div>
       <div class="ach-item"><div class="ach-icon">👑</div><div><div class="ach-title">Vice President — IoTeams Club (2025)</div><div class="ach-sub">Led planning of technical events, workshops, and IoT learning initiatives</div></div></div>
       <div class="ach-item"><div class="ach-icon">🎓</div><div><div class="ach-title">Dean's List — Two Semesters</div><div class="ach-sub">International Islamic University Malaysia (IIUM)</div></div></div>
-      <div class="ach-item"><div class="ach-icon">📜</div><div><div class="ach-title">CompTIA Data+ Certified</div><div class="ach-sub">Industry-recognized data analytics certification</div></div></div>
     </div>
   </div>
 </section>
@@ -445,7 +452,7 @@
   </div>
 </section>
 
-<footer>© 2026 Farah Binti Mazlan </footer>
+<footer>© 2026 Farah Binti Mazlan</footer>
 
 </body>
 </html>
